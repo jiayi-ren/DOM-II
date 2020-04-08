@@ -21,9 +21,9 @@ const text = get(".home p")
 const navLinks = getAll("nav a")
 
 // 1.load
-window.addEventListener('load', (event) => {
-    alert('WELCOME TO FUN BUS')
-})
+// window.addEventListener('load', (event) => {
+//     alert('WELCOME TO FUN BUS')
+// })
 // 2.resize
 window.addEventListener('resize', function(){
 
@@ -86,3 +86,6 @@ for(i = 0 ; i < navLinks.length ; i++){
         event.preventDefault()
         })
 }
+
+gsap.from('.main-navigation', {opacity:0, duration:5, x: -50})
+gsap.from('.intro', {opacity:0, duration:3, y:-30})
